@@ -1,0 +1,68 @@
+* {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: flexbox;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.playbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  width: 100px;
+  height: 100px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "물음표";
+    animation: gelatine 0.5s infinite;
+  }
+
+  &.rock::before {
+    content: "바위";
+    animation-delay: 1s;
+  }
+
+  &.scissor::before {
+    content: "가위";
+  }
+
+  &.paper::before {
+    content: "보";
+  }
+}
+
+.user {
+  display: flex;
+}
+
+/*
+* ============================= animate resources =============================
+*/
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

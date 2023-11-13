@@ -1,0 +1,12 @@
+.choice {
+  width: 500px;
+  height: 500px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "물음표";
+    transform: translate(50%, 50%);
+  }
+}

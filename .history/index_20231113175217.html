@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="title" href="javascript:void(0)" style="cursor: default"
+        >가위바위보 게임</a
+      >
+      <a href="javascript:void(0)" class="openbtn" onclick="openNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &times;
+      </a>
+    </div>
+
+    <div class="playbox main">
+      <div class="machine">
+        <div class="choice">
+          <input type="hidden" name="machine-choice" />
+        </div>
+      </div>
+      <div class="user">
+        <div class="choice scissor"></div>
+        <div class="choice rock"></div>
+        <div class="choice paper"></div>
+      </div>
+      <div class="control">
+        <input type="button" value="Replay" />
+      </div>
+    </div>
+
+    <script src="./js/ui.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

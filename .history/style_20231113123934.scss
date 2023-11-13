@@ -1,0 +1,19 @@
+* {
+  position: relative;
+}
+
+.choice {
+  width: 500px;
+  height: 500px;
+
+  &::before {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    content: "물음표";
+  }
+}
+
+.user {
+  display: flex;
+}

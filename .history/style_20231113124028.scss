@@ -1,0 +1,25 @@
+* {
+  position: relative;
+}
+
+.playbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choice {
+  width: 500px;
+  height: 500px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "물음표";
+  }
+}
+
+.user {
+  display: flex;
+}
